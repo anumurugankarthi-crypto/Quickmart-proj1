@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Quick Mart</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* HERO */
+        .policy-hero {
+            background: #2e7d32;
+            color: #fff;
+            text-align: center;
+            padding: 48px 60px 40px;
+        }
+
+        .policy-hero h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .policy-hero p {
+            font-size: 15px;
+            color: #c8e6c9;
+        }
+
+        /* BODY */
+        .policy-body {
+            padding: 32px 40px 48px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background: #f9f9f9;
+        }
+
+        /* GREEN NOTICE BOX */
+        .policy-notice {
+            background: #e8f5e9;
+            border-left: 4px solid #2e7d32;
+            border-radius: 10px;
+            padding: 16px 20px;
+            font-size: 13px;
+            color: #2e5e24;
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        /* SECTION CARDS */
+        .policy-section {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px 28px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+            border: 1px solid #f0f0f0;
+        }
+
+        .policy-section h2 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1.5px solid #f0f0f0;
+        }
+
+        .policy-section p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 6px;
+        }
+
+        .policy-section ul {
+            padding-left: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background: #f9f9f9;
+        }
+
+        .policy-section ul li {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* CONTACT CTA BOX */
+        .policy-cta {
+            background: #2e7d32;
+            border-radius: 14px;
+            padding: 28px 32px;
+            text-align: center;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .policy-cta h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .policy-cta p {
+            font-size: 13px;
+            color: #c8e6c9;
+            line-height: 1.7;
+        }
+
+        .policy-cta a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1000px) {
+            .policy-hero {
+                padding: 32px 20px 28px;
+            }
+
+            .policy-hero h1 {
+                font-size: 22px;
+            }
+
+            .policy-hero p {
+                font-size: 13px;
+            }
+
+            .policy-body {
+                padding: 20px 14px 36px;
+            }
+
+            .policy-section {
+                padding: 18px 16px;
+            }
+
+            .policy-section h2 {
+                font-size: 14px;
+            }
+
+            .policy-section p,
+            .policy-section ul li {
+                font-size: 12px;
+            }
+
+            .policy-cta {
+                padding: 22px 16px;
+            }
+
+            .policy-cta h3 {
+                font-size: 15px;
+            }
+
+            .policy-cta p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body class="page-privacy">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="qm">QM</span>
+            <div>
+                <h2>QUICK MART</h2>
+                <p>Speed You Can Trust</p>
+            </div>
+        </div>
+        <div>
+            <span class="location"><i class="fa-solid fa-location-crosshairs"></i></span>
+            <span style="font-size:20px;">Deliver to</span><br>
+            <span>Select Location</span>
+        </div>
+        <div class="search">
+            <iconify-icon icon="mdi:magnify"></iconify-icon>
+            <input style="font-size:20px;" type="text" placeholder="Search for Products...">
+        </div>
+        <div class="nav-icons">
+            <a href="Home.html" class="nav-icon-link nav-home"><iconify-icon icon="mdi:home-outline"></iconify-icon></a>
+            <a href="wishlist.html" class="nav-icon-link nav-wish"><iconify-icon
+                    icon="mdi:heart-outline"></iconify-icon></a>
+            <a href="cart.html" class="nav-icon-link nav-cart"><iconify-icon icon="mdi:cart-outline"></iconify-icon></a>
+            <label for="lm-toggle" class="login-btn">Login</label>
+        </div>
+    </header>
+    <!-- OVERLAY + MODAL ------------------------------------------------------->
+    <input type="checkbox" id="lm-toggle">
+    <div class="lm-overlay">
+        <div class="lm-card">
+
+            <!-- LEFT SIDE — FORM -->
+            <div class="lm-left">
+
+                <!-- Logo -->
+                <div class="lm-logo">
+                    <span class="lm-qm">QM</span>
+                    <div>
+                        <strong>QUICK MART</strong>
+                        <p>Speed You Can Trust</p>
+                    </div>
+                </div>
+
+                <!-- Tagline -->
+                <h2 class="lm-tagline">Lowest Prices Everyday<br>in minute</h2>
+
+                <!-- Name input -->
+                <div class="lm-input-wrap">
+                    <i class="fa-regular fa-user lm-icon"></i>
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+
+                <!-- Phone input -->
+                <div class="lm-input-wrap">
+                    <i class="fa-solid fa-phone lm-icon"></i>
+                    <input type="text" placeholder="Enter Phone number / Email Id">
+                </div>
+
+                <!-- OTP label -->
+                <div class="lm-otp-label">
+                    Enter OTP
+                    <span>we've sent a 4 digit OTP</span>
+                </div>
+
+                <!-- OTP boxes -->
+                <div class="lm-otp-boxes">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                </div>
+
+                <!-- Resend -->
+                <p class="lm-resend">Didn't receive OTP? <a href="#">Resend OTP</a></p>
+
+                <!-- Close = Continue button (label unchecks the checkbox) -->
+                <label for="lm-toggle" class="lm-continue-btn">Continue</label>
+
+                <p class="lm-terms">By continuing, you agree to our <a href="terms.html">Terms &amp; Conditions</a></p>
+            </div>
+
+            <!-- RIGHT SIDE — PROMO -->
+            <div class="lm-right">
+
+                <!-- ✕ close button -->
+                <label for="lm-toggle" class="lm-close-label">✕</label>
+
+                <h2>Order faster &amp;<br>easier everytime</h2>
+
+                <img src="assets/login.png" alt="Shopping Cart" class="lm-cart-img">
+
+                <a href="#" class="lm-store-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                        alt="Google Play">
+                </a>
+                <a href="#" class="lm-store-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                        alt="App Store">
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="policy-hero">
+        <h1>Privacy Policy</h1>
+        <p>How we collect, use and protect your personal information.</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="policy-body">
+
+        <!-- NOTICE -->
+        <div class="policy-notice">
+            We respect your privacy. Your data is never sold to third parties and is only used to improve your QuickMart
+            experience.
+        </div>
+
+        <!-- SECTION 1 -->
+        <div class="policy-section">
+            <h2>Information We Collect</h2>
+            <ul>
+                <li>Name, email address, phone number and date of birth</li>
+                <li>Delivery address and location (only with your permission)</li>
+                <li>Order history, preferences and spending patterns</li>
+                <li>Payment details — stored securely, never in plain text</li>
+                <li>Device info — IP address, browser type and app version</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="policy-section">
+            <h2>How We Use Your Information</h2>
+            <ul>
+                <li>To process and deliver your orders within 10 minutes</li>
+                <li>To send order confirmations and delivery updates</li>
+                <li>To personalise product recommendations for you</li>
+                <li>To process payments and prevent fraud</li>
+                <li>To send offers and discounts — you can opt out anytime</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div class="policy-section">
+            <h2>Sharing Your Data</h2>
+            <p>We do not sell, rent or trade your personal data. We only share limited information with:</p>
+            <ul>
+                <li><strong>Delivery partners</strong> — name, address and phone to complete delivery</li>
+                <li><strong>Payment processors</strong> — to handle your transactions securely</li>
+                <li><strong>Legal authorities</strong> — only when required by law or court order</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 4 -->
+        <div class="policy-section">
+            <h2>Cookies</h2>
+            <p>We use cookies to keep you logged in, remember your cart, and understand how you use our platform. You
+                can manage cookie preferences through your browser settings at any time.</p>
+        </div>
+
+        <!-- SECTION 5 -->
+        <div class="policy-section">
+            <h2>Your Rights</h2>
+            <ul>
+                <li><strong>Access</strong> — Request a copy of all data we hold about you</li>
+                <li><strong>Correct</strong> — Update your information from profile settings</li>
+                <li><strong>Delete</strong> — Request deletion of your account and data</li>
+                <li><strong>Opt out</strong> — Unsubscribe from marketing emails or SMS anytime</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 6 -->
+        <div class="policy-section">
+            <h2>Data Security</h2>
+            <p>All data is protected using SSL/TLS encryption. Payments are processed on PCI-compliant secure servers.
+                We run regular security audits and only authorised staff can access your data.</p>
+        </div>
+
+        <!-- CTA -->
+        <div class="policy-cta">
+            <h3>Questions about your privacy?</h3>
+            <p>Our team is happy to help. Reach us at <a href="mailto:privacy@quickmart.in">privacy@quickmart.in</a> or
+                call <a href="tel:18001234567">1800-123-4567</a>. We respond within 2 business days.</p>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-col brand">
+                <h3>QUICK MART</h3>
+                <p>Your trusted grocery partner. Fresh products delivered to your doorstep in 10 minutes or less, 24/7.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="fruits.html">Fruits &amp; Vegetables</a></li>
+                    <li><a href="grocery.html">Groceries</a></li>
+                    <li><a href="dairy.html">Dairy</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="household.html">HouseHolds</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><span>📍</span> Location: Chennai, India</li>
+                    <li><span>📞</span> Phone: +91 98765 43210</li>
+                    <li><span>✉️</span> Email: support@quickmart.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 QuickMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

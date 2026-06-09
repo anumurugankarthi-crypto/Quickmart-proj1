@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use - Quick Mart</title>
+    <link rel="stylesheet" href="home.css">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* HERO */
+        .terms-hero {
+            background: #2e7d32;
+            color: #fff;
+            text-align: center;
+            padding: 48px 60px 40px;
+        }
+
+        .terms-hero h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .terms-hero p {
+            font-size: 15px;
+            color: #c8e6c9;
+        }
+
+        /* BODY */
+        .terms-body {
+            padding: 32px 40px 48px;
+            background: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* INTRO NOTICE */
+        .terms-notice {
+            background: #fff;
+            border-radius: 12px;
+            padding: 18px 24px;
+            font-size: 13px;
+            color: #555;
+            line-height: 1.8;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+            border: 1px solid #f0f0f0;
+        }
+
+        .terms-notice strong {
+            color: #1a1a1a;
+        }
+
+        /* SECTION CARDS */
+        .terms-section {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px 28px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+            border: 1px solid #f0f0f0;
+        }
+
+        .terms-section h2 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1.5px solid #f0f0f0;
+        }
+
+        .terms-section p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+
+        .terms-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .terms-section ul {
+            padding-left: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-top: 6px;
+        }
+
+        .terms-section ul li {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .terms-section a {
+            color: #2e7d32;
+            text-decoration: underline;
+        }
+
+        /* CTA BOX */
+        .terms-cta {
+            background: #2e7d32;
+            border-radius: 14px;
+            padding: 28px 32px;
+            text-align: center;
+            color: #fff;
+            margin-top: 4px;
+        }
+
+        .terms-cta h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .terms-cta p {
+            font-size: 13px;
+            color: #c8e6c9;
+            line-height: 1.7;
+        }
+
+        .terms-cta a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1000px) {
+            
+    .terms-hero  { padding: 24px 14px; }
+    .terms-hero h1 { font-size: 22px; }
+    .terms-hero p  { font-size: 13px; }
+    .terms-body  { padding: 14px 14px 32px; gap: 12px; }
+    .terms-section { padding: 16px; }
+    .terms-section h2 { font-size: 14px; }
+    .terms-section p,
+    .terms-section ul li { font-size: 12px; }
+    .terms-notice { padding: 12px 14px; font-size: 12px; }
+    .terms-cta   { padding: 20px 14px; }
+    .terms-cta h3 { font-size: 15px; }
+    .terms-cta p  { font-size: 12px; }
+        }
+
+    
+    </style>
+</head>
+
+<body class="page-terms">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="qm">QM</span>
+            <div>
+                <h2>QUICK MART</h2>
+                <p>Speed You Can Trust</p>
+            </div>
+        </div>
+        <div>
+            <span class="location"><i class="fa-solid fa-location-crosshairs"></i></span>
+            <span style="font-size:20px;">Deliver to</span><br>
+            <span>Select Location</span>
+        </div>
+        <div class="search">
+            <iconify-icon icon="mdi:magnify"></iconify-icon>
+            <input style="font-size:20px;" type="text" placeholder="Search for Products...">
+        </div>
+        <div class="nav-icons">
+            <a href="Home.html" class="nav-icon-link nav-home"><iconify-icon icon="mdi:home-outline"></iconify-icon></a>
+            <a href="wishlist.html" class="nav-icon-link nav-wish"><iconify-icon
+                    icon="mdi:heart-outline"></iconify-icon></a>
+            <a href="cart.html" class="nav-icon-link nav-cart"><iconify-icon icon="mdi:cart-outline"></iconify-icon></a>
+            <label for="lm-toggle" class="login-btn">Login</label>
+        </div>
+    </header>
+    <!-- OVERLAY + MODAL ------------------------------------------------------->
+    <input type="checkbox" id="lm-toggle">
+    <div class="lm-overlay">
+        <div class="lm-card">
+
+            <!-- LEFT SIDE — FORM -->
+            <div class="lm-left">
+
+                <!-- Logo -->
+                <div class="lm-logo">
+                    <span class="lm-qm">QM</span>
+                    <div>
+                        <strong>QUICK MART</strong>
+                        <p>Speed You Can Trust</p>
+                    </div>
+                </div>
+
+                <!-- Tagline -->
+                <h2 class="lm-tagline">Lowest Prices Everyday<br>in minute</h2>
+
+                <!-- Name input -->
+                <div class="lm-input-wrap">
+                    <i class="fa-regular fa-user lm-icon"></i>
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+
+                <!-- Phone input -->
+                <div class="lm-input-wrap">
+                    <i class="fa-solid fa-phone lm-icon"></i>
+                    <input type="text" placeholder="Enter Phone number / Email Id">
+                </div>
+
+                <!-- OTP label -->
+                <div class="lm-otp-label">
+                    Enter OTP
+                    <span>we've sent a 4 digit OTP</span>
+                </div>
+
+                <!-- OTP boxes -->
+                <div class="lm-otp-boxes">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                </div>
+
+                <!-- Resend -->
+                <p class="lm-resend">Didn't receive OTP? <a href="#">Resend OTP</a></p>
+
+                <!-- Close = Continue button (label unchecks the checkbox) -->
+                <label for="lm-toggle" class="lm-continue-btn">Continue</label>
+
+                <p class="lm-terms">By continuing, you agree to our <a href="terms.html">Terms &amp; Conditions</a></p>
+            </div>
+
+            <!-- RIGHT SIDE — PROMO -->
+            <div class="lm-right">
+
+                <!-- ✕ close button -->
+                <label for="lm-toggle" class="lm-close-label">✕</label>
+
+                <h2>Order faster &amp;<br>easier everytime</h2>
+
+                <img src="assets/login.png" alt="Shopping Cart" class="lm-cart-img">
+
+                <a href="#" class="lm-store-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                        alt="Google Play">
+                </a>
+                <a href="#" class="lm-store-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                        alt="App Store">
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="terms-hero">
+        <h1>Terms of Use</h1>
+        <p>Please read these terms carefully before using QuickMart.</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="terms-body">
+
+        <!-- INTRO -->
+        <div class="terms-notice">
+            By using the QuickMart website or app, you agree to these Terms of Use. If you do not agree, please
+            discontinue use of our services.
+        </div>
+
+        <!-- ACCEPTANCE -->
+        <div class="terms-section">
+            <h2>Acceptance of Terms</h2>
+            <p>By accessing or using QuickMart, you confirm that you are at least 18 years of age, have read and
+                understood these terms, and agree to be bound by them. These terms apply to all users including
+                visitors, registered customers, and anyone who places an order.</p>
+        </div>
+
+        <!-- USE OF SERVICES -->
+        <div class="terms-section">
+            <h2>Use of Our Services</h2>
+            <p>You agree to use QuickMart only for lawful purposes. You must not:</p>
+            <ul>
+                <li>Use the platform for any fraudulent or illegal activity</li>
+                <li>Place false, misleading or duplicate orders</li>
+                <li>Interfere with or disrupt the platform's operation</li>
+                <li>Use automated scripts or bots to access the service</li>
+            </ul>
+        </div>
+
+        <!-- ACCOUNT RESPONSIBILITY -->
+        <div class="terms-section">
+            <h2>Account Responsibility</h2>
+            <p>You are responsible for maintaining the confidentiality of your account credentials. Any action carried
+                out under your account is your responsibility. Please notify us immediately at <a
+                    href="mailto:support@quickmart.com">support@quickmart.com</a> if you suspect any unauthorised access
+                to your account.</p>
+        </div>
+
+        <!-- ORDERS AND PAYMENTS -->
+        <div class="terms-section">
+            <h2>Orders and Payments</h2>
+            <ul>
+                <li>All orders are subject to availability and confirmation</li>
+                <li>Prices displayed are inclusive of applicable taxes</li>
+                <li>The total you see at checkout is the final amount you pay</li>
+                <li>Additional charges may apply based on availability or pricing errors</li>
+                <li>Refunds for cancelled orders are processed within 3–5 business days</li>
+            </ul>
+        </div>
+
+        <!-- DELIVERY POLICY -->
+        <div class="terms-section">
+            <h2>Delivery Policy</h2>
+            <p>QuickMart aims to deliver all orders within 10 minutes. Delivery times may vary due to weather, high
+                demand, or location. An order is confirmed only after payment is successfully processed. Free delivery
+                is applicable on orders above ₹99 when the QuickMart Express Delivery is selected.</p>
+        </div>
+
+        <!-- RETURNS AND REFUNDS -->
+        <div class="terms-section">
+            <h2>Returns and Refunds</h2>
+            <p>Return requests must be raised within 24 hours of delivery. Items must be returned in original condition
+                unless they are damaged or defective on arrival. Perishable items such as fresh produce cannot be
+                returned unless the issue is reported via the in-app customer feedback or to QuickMart Support.</p>
+        </div>
+
+        <!-- INTELLECTUAL PROPERTY -->
+        <div class="terms-section">
+            <h2>Intellectual Property</h2>
+            <p>All content on QuickMart — including logos, images, text, and design — is the property of QuickMart and
+                protected under applicable intellectual property laws. You may not reproduce, distribute, or use any
+                content without prior written permission from QuickMart.</p>
+        </div>
+
+        <!-- LIMITATION OF LIABILITY -->
+        <div class="terms-section">
+            <h2>Limitation of Liability</h2>
+            <p>QuickMart is not liable for any indirect, incidental, or consequential damages arising from the use of
+                our platform or services. Our maximum liability is limited to the total value of the order in question.
+                We do not guarantee uninterrupted or error-free access to the platform at all times.</p>
+        </div>
+
+        <!-- CHANGES TO TERMS -->
+        <div class="terms-section">
+            <h2>Changes to Terms</h2>
+            <p>QuickMart reserves the right to update or modify these Terms of Use at any time. Changes will be
+                communicated via the app or website. Continued use of the platform after any changes means you have
+                accepted the revised terms.</p>
+        </div>
+
+        <!-- CTA -->
+        <div class="terms-cta">
+            <h3>Have questions about our Terms?</h3>
+            <p>We're happy to clarify. Reach us at <a href="mailto:legal@quickmart.in">legal@quickmart.in</a> or call <a
+                    href="tel:18001234567">1800-123-4567</a>. We respond within 2 business days.</p>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-col brand">
+                <h3>QUICK MART</h3>
+                <p>Your trusted grocery partner. Fresh products delivered to your doorstep in 10 minutes or less, 24/7.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="fruits.html">Fruits &amp; Vegetables</a></li>
+                    <li><a href="grocery.html">Groceries</a></li>
+                    <li><a href="dairy.html">Dairy</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="household.html">HouseHolds</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><span>📍</span> Location: Chennai, India</li>
+                    <li><span>📞</span> Phone: +91 98765 43210</li>
+                    <li><span>✉️</span> Email: support@quickmart.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 QuickMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

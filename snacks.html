@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Mart</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICONIFY -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="logo">
+      <span class="qm">QM</span>
+      <div>
+        <h2>QUICK MART</h2>
+        <p>Speed You Can Trust</p>
+      </div>
+    </div>
+
+    <div>
+      <span class="location"><i class="fa-solid fa-location-crosshairs"></i></span>
+      <span style="font-size: 20px;">Deliver to</span> <br>
+      <span>Select Location</span>
+    </div>
+
+    <div class="search">
+      <iconify-icon icon="mdi:magnify"></iconify-icon>
+      <input style="font-size: 20px;" type="text" placeholder="Search for Products...">
+    </div>
+
+
+    <div class="nav-icons">
+      <a href="Home.html" class="nav-icon-link" id="nav-home">
+        <iconify-icon icon="mdi:home-outline"></iconify-icon>
+      </a>
+      <a href="wishlist.html" class="nav-icon-link" id="nav-wish">
+        <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+      </a>
+      <a href="cart.html" class="nav-icon-link" id="nav-cart">
+        <iconify-icon icon="mdi:cart-outline"></iconify-icon>
+      </a><label for="lm-toggle" class="login-btn">Login</label>
+    </div>
+  </header>
+  <!-- OVERLAY + MODAL ------------------------------------------------------->
+  <input type="checkbox" id="lm-toggle">
+  <div class="lm-overlay">
+    <div class="lm-card">
+
+      <!-- LEFT SIDE — FORM -->
+      <div class="lm-left">
+
+        <!-- Logo -->
+        <div class="lm-logo">
+          <span class="lm-qm">QM</span>
+          <div>
+            <strong>QUICK MART</strong>
+            <p>Speed You Can Trust</p>
+          </div>
+        </div>
+
+        <!-- Tagline -->
+        <h2 class="lm-tagline">Lowest Prices Everyday<br>in minute</h2>
+
+        <!-- Name input -->
+        <div class="lm-input-wrap">
+          <i class="fa-regular fa-user lm-icon"></i>
+          <input type="text" placeholder="Enter Your Name">
+        </div>
+
+        <!-- Phone input -->
+        <div class="lm-input-wrap">
+          <i class="fa-solid fa-phone lm-icon"></i>
+          <input type="text" placeholder="Enter Phone number / Email Id">
+        </div>
+
+        <!-- OTP label -->
+        <div class="lm-otp-label">
+          Enter OTP
+          <span>we've sent a 4 digit OTP</span>
+        </div>
+
+        <!-- OTP boxes -->
+        <div class="lm-otp-boxes">
+          <input class="lm-otp-box" type="text" maxlength="1">
+          <input class="lm-otp-box" type="text" maxlength="1">
+          <input class="lm-otp-box" type="text" maxlength="1">
+          <input class="lm-otp-box" type="text" maxlength="1">
+        </div>
+
+        <!-- Resend -->
+        <p class="lm-resend">Didn't receive OTP? <a href="#">Resend OTP</a></p>
+
+        <!-- Close = Continue button (label unchecks the checkbox) -->
+        <label for="lm-toggle" class="lm-continue-btn">Continue</label>
+
+        <p class="lm-terms">By continuing, you agree to our <a href="terms.html">Terms &amp; Conditions</a></p>
+      </div>
+
+      <!-- RIGHT SIDE — PROMO -->
+      <div class="lm-right">
+
+        <!-- ✕ close button -->
+        <label for="lm-toggle" class="lm-close-label">✕</label>
+
+        <h2>Order faster &amp;<br>easier everytime</h2>
+
+        <img src="assets/login.png" alt="Shopping Cart" class="lm-cart-img">
+
+        <a href="#" class="lm-store-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+            alt="Google Play">
+        </a>
+        <a href="#" class="lm-store-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+            alt="App Store">
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <!-- CATEGORIES -->
+  <div class="catcat-wrapper">
+    <h2>Shop by Category</h2>
+    <section>
+      <div class="categories">
+        <h2></h2>
+        <a href="fruits.html" class="cat-link">
+          <div class="cat-card">
+            <div class="cat-img">
+              <img src="assets/Fruits-and-Vegetables.jpg" alt="">
+            </div>
+            <p>Fruits & Vegetables</p>
+          </div>
+        </a>
+
+        <a href="grocery.html" class="cat-link">
+          <div class="cat-card">
+            <div class="cat-img">
+              <img src="assets/Goodness-of-Grains.jpg" alt="">
+            </div>
+            <p>Groceries</p>
+          </div>
+        </a>
+
+        <a href="snacks.html" class="cat-link">
+          <div class="cat-card active">
+            <div class="cat-img">
+              <img src="assets/snack.jpg" alt="">
+            </div>
+            <p>Snacks & Chocolates</p>
+          </div>
+        </a>
+
+        <a href="dairy.html" class="cat-link">
+          <div class="cat-card">
+            <div class="cat-img">
+              <img src="assets/dairy.jpg" alt="">
+            </div>
+            <p>Dairy</p>
+          </div>
+        </a>
+
+        <a href="household.html" class="cat-link">
+          <div class="cat-card">
+            <div class="cat-img">
+              <img src="assets/household.png" alt="">
+            </div>
+            <p>Households</p>
+          </div>
+        </a>
+
+        <a href="beauty.html" class="cat-link">
+          <div class="cat-card">
+            <div class="cat-img">
+              <img src="assets/beauty.webp" alt="">
+            </div>
+            <p>Beauty</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- BANNER -->
+  <section class="catban">
+    <div>
+      <h1 style=" font-size: 45px; margin-left: 100px;">Tasty Snacks for Every Craving</h1><br>
+      <p style="font-size: 30px; margin-left: 100px;"> Crunchy, spicy, and sweet treats to enjoy anytime, anywhere.</p>
+    </div>
+
+    <div class="banner-img">
+      <img src="">
+    </div>
+  </section>
+ <!-- SECTION 1: Chips & Crips -->
+<section class="products-section">
+  <h2>Chips & Crips</h2>
+  <div class="products-grid">
+ 
+    <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/puffcorn.png" alt="Kurkure puffcorn">
+      <p class="prod-name">Kurkure puffcorn</p>
+      <p class="prod-weight">55g</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹10</span>
+        </div>
+        <button class="add-btn" data-name="Kurkure puffcorn" data-weight="55g" data-price="10" data-img="assets/kurkure-puffcorn.jpg" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/kurkure.jfif" alt="Kurkure">
+      <p class="prod-name">Kurkure</p>
+      <p class="prod-weight">90g</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹20</span>
+        </div>
+        <button class="add-btn" data-name="Kurkure" data-weight="90g" data-price="20" data-img="assets/kurkure.jpg" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/lays.png" alt="Lays American cheese">
+      <p class="prod-name">Lays American cheese</p>
+      <p class="prod-weight">55g</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹27</span>
+        </div>
+        <button class="add-btn" data-name="Lays American cheese" data-weight="55g" data-price="27" data-img="assets/lays.png" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+      <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/wavy.jfif" alt="Lays American cheese">
+      <p class="prod-name">Lays </p>
+      <p class="prod-weight">55g</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹27</span>
+        </div>
+        <button class="add-btn" data-name="Lays American cheese" data-weight="55g" data-price="27" data-img="assets/lays.png" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/cheetos.jfif" alt="Cheetos cheese puffs">
+      <p class="prod-name">Cheetos cheese puffs</p>
+      <p class="prod-weight">55g</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹10</span>
+        </div>
+        <button class="add-btn" data-name="Cheetos cheese puffs" data-weight="55g" data-price="10" data-img="assets/cheetos.jpg" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- SECTION 2: Drinks -->
+<section class="products-section">
+  <h2>Drinks</h2>
+  <div class="products-grid">
+ 
+    <div class="product-card">
+      <span class="discount-badge">10% OFF</span>
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/real.png" alt="Real Mixed Fruit">
+      <p class="prod-name">Real Mixed Fruit</p>
+      <p class="prod-weight">1L</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹140</span>
+          <span class="prod-mrp">₹160</span>
+        </div>
+        <button class="add-btn" data-name="Real Mixed Fruit" data-weight="1L" data-price="140" data-img="assets/real-juice.png" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/froooti.webp" alt="Frooti">
+      <p class="prod-name">Frooti</p>
+      <p class="prod-weight">1.5L</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹30</span>
+          <span class="prod-mrp">₹Free</span>
+        </div>
+        <button class="add-btn" data-name="Frooti" data-weight="1.5L" data-price="30" data-img="assets/frooti.jpg" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/cavins.png" alt="Cavens Milkshake">
+      <p class="prod-name">Cavens Milkshake</p>
+      <p class="prod-weight">200ml</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹35</span>
+        </div>
+        <button class="add-btn" data-name="Cavens Milkshake" data-weight="200ml" data-price="35" data-img="assets/cavendsmilkshake.jpg" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/yogurtdrink.jfif" alt="yogurt drink">
+      <p class="prod-name">yogurt drink</p>
+      <p class="prod-weight">200ml</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹23</span>
+        </div>
+        <button class="add-btn" data-name="Yogurt drink" data-weight="200ml" data-price="23" data-img="assets/yogurt-drink.jpg" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+     
+    <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/cavbad.jfif" alt="Cavens Milkshake">
+      <p class="prod-name">Cavens Badammilk</p>
+      <p class="prod-weight">200ml</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹35</span>
+        </div>
+        <button class="add-btn" data-name="Cavens Milkshake" data-weight="200ml" data-price="35" data-img="assets/cavendsmilkshake.jpg" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- SECTION 3: Chocolates -->
+<section class="products-section">
+  <h2>Chocolates</h2>
+  <div class="products-grid">
+ 
+    <div class="product-card">
+      <span class="discount-badge">10% OFF</span>
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/kitkat.webp" alt="Kitkat">
+      <p class="prod-name">Kitkat</p>
+      <p class="prod-weight">50g</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹20</span>
+          <span class="prod-mrp">₹110</span>
+        </div>
+        <button class="add-btn" data-name="Kitkat" data-weight="50g" data-price="20" data-img="assets/kitkat.png" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/dairy.jpg" alt="Dairy Milk silk">
+      <p class="prod-name">Dairy Milk silk</p>
+      <p class="prod-weight">145g</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹145</span>
+          <span class="prod-mrp">₹160</span>
+        </div>
+        <button class="add-btn" data-name="Dairy Milk silk" data-weight="145g" data-price="145" data-img="assets/dairymilk.jpg" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/snickers.jfif" alt="Snickers variety pack">
+      <p class="prod-name">Snickers variety pack</p>
+      <p class="prod-weight">200g</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹190</span>
+        </div>
+        <button class="add-btn" data-name="Snickers variety pack" data-weight="200g" data-price="190" data-img="assets/snickers.jpg" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/milkybar.jfif" alt="Snickers variety pack">
+      <p class="prod-name">Milkybar</p>
+      <p class="prod-weight">200g</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹190</span>
+        </div>
+        <button class="add-btn" data-name="Snickers variety pack" data-weight="200g" data-price="190" data-img="assets/snickers.jpg" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <span class="discount-badge">5% OFF</span>
+      <i class="fa-regular fa-heart wish-icon"></i>
+      <img class="prod-img" src="assets/kj.webp" alt="Kinder Joy">
+      <p class="prod-name">Kinder Joy</p>
+      <p class="prod-weight">20g</p>
+      <div class="prod-footer">
+        <div class="price-block">
+          <span class="prod-price">₹42</span>
+          <span class="prod-mrp">₹160</span>
+        </div>
+        <button class="add-btn" data-name="Kinder Joy" data-weight="20g" data-price="42" data-img="assets/kinderJoy.jpg" onclick="addToCart(this)">+</button>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+
+ 
+  <!-- ===========================
+     FOOTER
+=========================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-col brand">
+        <h3>QUICK MART</h3>
+        <p>Your trusted grocery partner. Fresh products delivered to your doorstep in 10 minutes or less, 24/7.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="fruits.html">Fruits &amp; Vegetables</a></li>
+          <li><a href="grocery.html">Groceries</a></li>
+          <li><a href="dairy.html">Dairy</a></li>
+          <li><a href="snacks.html">Snacks</a></li>
+          <li><a href="household.html">HouseHolds</a></li>
+          <li><a href="beauty.html">Beauty</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><span>📍</span> Location: Chennai, India</li>
+          <li><span>📞</span> Phone: +91 98765 43210</li>
+          <li><span>✉️</span> Email: support@quickmart.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 QuickMart. All rights reserved.</p>
+    </div>
+  </footer>
+  </div>
+</body>

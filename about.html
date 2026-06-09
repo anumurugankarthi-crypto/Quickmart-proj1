@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Quick Mart</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* ── HERO ── */
+        .about-hero {
+            background: #2e7d32;
+            color: #fff;
+            padding: 48px 60px;
+        }
+
+        .about-hero h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .about-hero p {
+            font-size: 16px;
+            color: #c8e6c9;
+            max-width: 560px;
+            line-height: 1.7;
+        }
+
+        /* ── STATS ── */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 32px 60px;
+            background: #f9f9f9;
+        }
+
+        .stat-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px 20px;
+            text-align: center;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.07);
+        }
+
+        .stat-card .stat-num {
+            font-size: 28px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .stat-card .stat-label {
+            font-size: 13px;
+            color: #888;
+        }
+
+        /* ── SECTIONS WRAPPER ── */
+        .about-body {
+            padding: 0 60px 40px;
+            background: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .about-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .about-section h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+        }
+
+        .about-section p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        /* ── VALUES GRID ── */
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 4px;
+        }
+
+        .value-card {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .value-card h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+        }
+
+        .value-card p {
+            font-size: 13px;
+            color: #777;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ── TEAM ── */
+        .team-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 8px;
+        }
+
+        .team-member {
+            background: #f5f5f5;
+            border-radius: 14px;
+            padding: 32px 20px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .team-avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: #2e7d32;
+            color: #fff;
+            font-size: 22px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .team-member .member-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-align: center;
+            margin-top: 4px;
+        }
+
+        .team-member .member-role {
+            font-size: 13px;
+            color: #888;
+            text-align: center;
+            margin-top: -6px;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1000px) {
+            .about-hero {
+                padding: 32px 24px;
+            }
+
+            .stats-row {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 20px 24px;
+            }
+
+            .about-body {
+                padding: 0 24px 32px;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-section {
+                padding: 20px;
+            }
+
+            .team-row {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+            }
+
+            .team-member {
+                padding: 14px 6px;
+                border-radius: 12px;
+            }
+
+            .team-avatar {
+                width: 48px;
+                height: 48px;
+                font-size: 14px;
+            }
+
+            .team-member .member-name {
+                font-size: 11px;
+                font-weight: 700;
+                line-height: 1.3;
+                margin-top: 6px;
+            }
+
+            .team-member .member-role {
+                font-size: 9px;
+                line-height: 1.4;
+                margin-top: 2px;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="page-about">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="qm">QM</span>
+            <div>
+                <h2>QUICK MART</h2>
+                <p>Speed You Can Trust</p>
+            </div>
+        </div>
+        <div>
+            <span class="location"><i class="fa-solid fa-location-crosshairs"></i></span>
+            <span style="font-size:20px;">Deliver to</span><br>
+            <span>Select Location</span>
+        </div>
+        <div class="search">
+            <iconify-icon icon="mdi:magnify"></iconify-icon>
+            <input style="font-size:20px;" type="text" placeholder="Search for Products...">
+        </div>
+        <div class="nav-icons">
+            <a href="Home.html" class="nav-icon-link nav-home"><iconify-icon icon="mdi:home-outline"></iconify-icon></a>
+            <a href="wishlist.html" class="nav-icon-link nav-wish"><iconify-icon
+                    icon="mdi:heart-outline"></iconify-icon></a>
+            <a href="cart.html" class="nav-icon-link nav-cart"><iconify-icon icon="mdi:cart-outline"></iconify-icon></a>
+            <label for="lm-toggle" class="login-btn">Login</label>
+        </div>
+    </header>
+    <!-- login OVERLAY + MODAL ------------------------------------------------------->
+    <input type="checkbox" id="lm-toggle">
+    <div class="lm-overlay">
+        <div class="lm-card">
+
+            <!-- LEFT SIDE — FORM -->
+            <div class="lm-left">
+
+                <!-- Logo -->
+                <div class="lm-logo">
+                    <span class="lm-qm">QM</span>
+                    <div>
+                        <strong>QUICK MART</strong>
+                        <p>Speed You Can Trust</p>
+                    </div>
+                </div>
+
+                <!-- Tagline -->
+                <h2 class="lm-tagline">Lowest Prices Everyday<br>in minute</h2>
+
+                <!-- Name input -->
+                <div class="lm-input-wrap">
+                    <i class="fa-regular fa-user lm-icon"></i>
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+
+                <!-- Phone input -->
+                <div class="lm-input-wrap">
+                    <i class="fa-solid fa-phone lm-icon"></i>
+                    <input type="text" placeholder="Enter Phone number / Email Id">
+                </div>
+
+                <!-- OTP label -->
+                <div class="lm-otp-label">
+                    Enter OTP
+                    <span>we've sent a 4 digit OTP</span>
+                </div>
+
+                <!-- OTP boxes -->
+                <div class="lm-otp-boxes">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                    <input class="lm-otp-box" type="text" maxlength="1">
+                </div>
+
+                <!-- Resend -->
+                <p class="lm-resend">Didn't receive OTP? <a href="#">Resend OTP</a></p>
+
+                <!-- Close = Continue button (label unchecks the checkbox) -->
+                <label for="lm-toggle" class="lm-continue-btn">Continue</label>
+
+                <p class="lm-terms">By continuing, you agree to our <a href="terms.html">Terms &amp; Conditions</a></p>
+            </div>
+
+            <!-- RIGHT SIDE — PROMO -->
+            <div class="lm-right">
+
+                <!-- ✕ close button -->
+                <label for="lm-toggle" class="lm-close-label">✕</label>
+
+                <h2>Order faster &amp;<br>easier everytime</h2>
+
+                <img src="assets/login.png" alt="Shopping Cart" class="lm-cart-img">
+
+                <a href="#" class="lm-store-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                        alt="Google Play">
+                </a>
+                <a href="#" class="lm-store-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                        alt="App Store">
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- HERO -->
+    <div class="about-hero">
+        <h1>About QuickMart</h1>
+        <p>We're on a mission to deliver fresh groceries to your doorstep in 10 minutes or less — every single day,
+            24/7.</p>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-row">
+        <div class="stat-card">
+            <div class="stat-num">10 min</div>
+            <div class="stat-label">Average Delivery</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">2M+</div>
+            <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">50+</div>
+            <div class="stat-label">Cities Served</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">10,000+</div>
+            <div class="stat-label">Products Available</div>
+        </div>
+    </div>
+
+    <!-- BODY SECTIONS -->
+    <div class="about-body">
+
+        <!-- OUR STORY -->
+        <div class="about-section">
+            <h2>Our Story</h2>
+            <p>QuickMart was founded in 2021 with one simple idea — groceries should arrive before you even finish
+                thinking about what to cook. We started in Chennai with a single dark store and 5 delivery partners.</p>
+            <p>Today, we operate across 50+ cities with 500+ dark stores and 10,000+ delivery heroes.</p>
+            <p>We work directly with farmers, local vendors, and trusted brands to bring you the freshest produce at the
+                lowest prices. No middlemen. No delays. Just fresh groceries at your door in 10 minutes.</p>
+        </div>
+
+        <!-- OUR VALUES -->
+        <div class="about-section">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h4>Speed First</h4>
+                    <p>We built our entire infrastructure around one goal — 10-minute delivery. Every warehouse, every
+                        route, every hire is optimized for speed.</p>
+                </div>
+                <div class="value-card">
+                    <h4>Always Fresh</h4>
+                    <p>Our inventory is sourced daily from local farms and suppliers. If it isn't fresh, it doesn't
+                        reach your door. Simple as that.</p>
+                </div>
+                <div class="value-card">
+                    <h4>Lowest Prices</h4>
+                    <p>We cut out the middleman and pass the savings to you. Best prices guaranteed on all groceries,
+                        every single day.</p>
+                </div>
+                <div class="value-card">
+                    <h4>Community First</h4>
+                    <p>We support local farmers and small businesses. Every order you place helps the communities we
+                        serve grow stronger.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- LEADERSHIP TEAM -->
+        <div class="about-section">
+            <h2>Our Leadership Team</h2>
+            <div class="team-row">
+                <div class="team-member">
+                    <div class="team-avatar">RK</div>
+                    <div class="member-name">Rahul Kumar</div>
+                    <div class="member-role">Co-Founder &amp; CEO</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">PS</div>
+                    <div class="member-name">Priya Sharma</div>
+                    <div class="member-role">Co-Founder &amp; COO</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">AM</div>
+                    <div class="member-name">Arun Mehta</div>
+                    <div class="member-role">Chief Technology Officer</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-col brand">
+                <h3>QUICK MART</h3>
+                <p>Your trusted grocery partner. Fresh products delivered to your doorstep in 10 minutes or less, 24/7.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="fruits.html">Fruits &amp; Vegetables</a></li>
+                    <li><a href="grocery.html">Groceries</a></li>
+                    <li><a href="dairy.html">Dairy</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="household.html">HouseHolds</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><span>📍</span> Location: Chennai, India</li>
+                    <li><span>📞</span> Phone: +91 98765 43210</li>
+                    <li><span>✉️</span> Email: support@quickmart.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 QuickMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

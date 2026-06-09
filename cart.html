@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Mart</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICONIFY -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="logo">
+      <span class="qm">QM</span>
+      <div>
+        <h2>QUICK MART</h2>
+        <p>Speed You Can Trust</p>
+      </div>
+    </div>
+
+    <div>
+      <span class="location"><i class="fa-solid fa-location-crosshairs"></i></span>
+      <span style="font-size: 20px;">Deliver to</span> <br>
+      <span>Select Location</span>
+    </div>
+
+    <div class="search">
+      <iconify-icon icon="mdi:magnify"></iconify-icon>
+      <input style="font-size: 20px;" type="text" placeholder="Search for Products...">
+    </div>
+
+    <div class="nav-icons">
+      <a href="Home.html" class="nav-icon-link" id="nav-home">
+        <iconify-icon icon="mdi:home-outline"></iconify-icon>
+      </a>
+      <a href="wishlist.html" class="nav-icon-link" id="nav-wish">
+        <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+      </a>
+      <a href="cart.html" class="nav-icon-link" id="nav-cart">
+        <iconify-icon icon="mdi:cart-outline"></iconify-icon>
+      </a>
+     <label for="lm-toggle" class="login-btn">Login</label>
+    </div>
+
+  </header>
+  <!-- OVERLAY + MODAL ------------------------------------------------------->
+   <input type="checkbox" id="lm-toggle">
+<div class="lm-overlay">
+  <div class="lm-card">
+ 
+    <!-- LEFT SIDE — FORM -->
+    <div class="lm-left">
+ 
+      <!-- Logo -->
+      <div class="lm-logo">
+        <span class="lm-qm">QM</span>
+        <div>
+          <strong>QUICK MART</strong>
+          <p>Speed You Can Trust</p>
+        </div>
+      </div>
+ 
+      <!-- Tagline -->
+      <h2 class="lm-tagline">Lowest Prices Everyday<br>in minute</h2>
+ 
+      <!-- Name input -->
+      <div class="lm-input-wrap">
+        <i class="fa-regular fa-user lm-icon"></i>
+        <input type="text" placeholder="Enter Your Name">
+      </div>
+ 
+      <!-- Phone input -->
+      <div class="lm-input-wrap">
+        <i class="fa-solid fa-phone lm-icon"></i>
+        <input type="text" placeholder="Enter Phone number / Email Id">
+      </div>
+ 
+      <!-- OTP label -->
+      <div class="lm-otp-label">
+        Enter OTP
+        <span>we've sent a 4 digit OTP</span>
+      </div>
+ 
+      <!-- OTP boxes -->
+      <div class="lm-otp-boxes">
+        <input class="lm-otp-box" type="text" maxlength="1">
+        <input class="lm-otp-box" type="text" maxlength="1">
+        <input class="lm-otp-box" type="text" maxlength="1">
+        <input class="lm-otp-box" type="text" maxlength="1">
+      </div>
+ 
+      <!-- Resend -->
+      <p class="lm-resend">Didn't receive OTP? <a href="#">Resend OTP</a></p>
+ 
+      <!-- Close = Continue button (label unchecks the checkbox) -->
+      <label for="lm-toggle" class="lm-continue-btn">Continue</label>
+ 
+      <p class="lm-terms">By continuing, you agree to our <a href="terms.html">Terms &amp; Conditions</a></p>
+    </div>
+ 
+    <!-- RIGHT SIDE — PROMO -->
+    <div class="lm-right">
+ 
+      <!-- ✕ close button -->
+      <label for="lm-toggle" class="lm-close-label">✕</label>
+ 
+      <h2>Order faster &amp;<br>easier everytime</h2>
+ 
+      <img src="assets/login.png" alt="Shopping Cart" class="lm-cart-img">
+ 
+      <a href="#" class="lm-store-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      </a>
+      <a href="#" class="lm-store-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+      </a>
+ 
+    </div>
+  </div>
+</div>
+
+    
+</body>
+</html>
